@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=3 uid="uid://jlntm7cg5o01"]
+
+[ext_resource type="Texture2D" uid="uid://dojlwxcdqgcbe" path="res://assets/images/Sky.png" id="1_jqnuc"]
+[ext_resource type="Script" path="res://Programmed/Master Scene/BGScroll.gd" id="1_jxkn6"]
+[ext_resource type="Script" path="res://Programmed/Master Scene/master_scene.gd" id="1_ljvxa"]
+[ext_resource type="PackedScene" uid="uid://st371khjppdg" path="res://Programmed/MainScreen/main_screen.tscn" id="2_ak53m"]
+[ext_resource type="PackedScene" uid="uid://dfg3ag6jddxh2" path="res://Programmed/Game Screen/game_screen.tscn" id="3_xes6j"]
+
+[node name="Master Scene" type="CanvasLayer"]
+script = ExtResource("1_ljvxa")
+
+[node name="BGScroll" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_jxkn6")
+
+[node name="SkyBG" type="TextureRect" parent="BGScroll"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_right = 5952.0
+offset_bottom = 748.0
+grow_vertical = 2
+texture = ExtResource("1_jqnuc")
+
+[node name="SkyBG2" type="TextureRect" parent="BGScroll"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_right = 5952.0
+offset_bottom = 748.0
+grow_vertical = 2
+texture = ExtResource("1_jqnuc")
+
+[node name="MainScreen" parent="." instance=ExtResource("2_ak53m")]
+
+[node name="GameScreen" parent="." instance=ExtResource("3_xes6j")]
+
+[node name="Sound" type="AudioStreamPlayer" parent="."]

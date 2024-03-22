@@ -1,0 +1,10 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://dby3w3wvjejry"]
+
+[ext_resource type="FontFile" uid="uid://chtxsbav8tu16" path="res://assets/fonts/04b19.ttf" id="1_wpyay"]
+
+[resource]
+font = ExtResource("1_wpyay")
+font_size = 32
+font_color = Color(0.2, 0.141176, 0.172549, 1)
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)

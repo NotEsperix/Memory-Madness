@@ -1,0 +1,11 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://bwj4u2mayej2h"]
+
+[ext_resource type="FontFile" uid="uid://bb17p8ud26oey" path="res://assets/fonts/foo.ttf" id="1_80q4y"]
+
+[resource]
+font = ExtResource("1_80q4y")
+font_size = 32
+outline_size = 3
+outline_color = Color(0, 0, 0, 0.784314)
+shadow_size = 4
+shadow_color = Color(0, 0, 0, 0.235294)

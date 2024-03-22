@@ -1,0 +1,34 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Memory Madness"
+run/main_scene="res://Programmed/Master Scene/master_scene.tscn"
+config/features=PackedStringArray("4.2", "Mobile")
+config/icon="res://Rando Shop.png"
+
+[autoload]
+
+SignalManager="*res://Programmed/Singletons/signal_manager.gd"
+ImageManager="*res://Programmed/Singletons/image_manager.gd"
+SoundManager="*res://Programmed/Singletons/sound_manager.gd"
+GameManager="*res://Programmed/Singletons/game_manager.gd"
+
+[display]
+
+window/size/viewport_width=1024
+window/size/viewport_height=768
+window/stretch/mode="canvas_items"
+
+[rendering]
+
+renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true
